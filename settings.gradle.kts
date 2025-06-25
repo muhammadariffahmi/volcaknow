@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "VolcaKnow"
 include(":app")
- 
+include(":opencv:sdk")
