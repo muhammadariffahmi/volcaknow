@@ -37,20 +37,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="30dp" />
 
-    <!-- OpenCV video frame (ImageView placeholder) -->
-    <ImageView
-        android:id="@+id/videoPreview"
+    <VideoView
+        android:id="@+id/videoView"
         android:layout_width="0dp"
         android:layout_height="200dp"
-        android:scaleType="centerCrop"
-        android:background="@android:color/darker_gray"
-        android:contentDescription="OpenCV Video Preview"
+        android:layout_marginTop="16dp"
         app:layout_constraintTop_toBottomOf="@id/volcanoNameLabel"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp" />
+
 
     <!-- Button to watch full video -->
     <Button
@@ -66,7 +63,7 @@
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
         android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@id/videoPreview"
+        app:layout_constraintTop_toBottomOf="@id/videoView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp" />
